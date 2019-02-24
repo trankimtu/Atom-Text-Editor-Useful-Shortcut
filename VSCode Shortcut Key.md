@@ -28,20 +28,28 @@
   ```
 - Scroll line up/down
   ```
+  Alt + ↑ / ↓ 
+  ```
+- Scroll page 1 line up/down - Cursor stay the same location
+  ```
   Ctrl + ↑ / ↓ 
   ```
--
--
--
--
--
-
-
+- Insert line below
+  ```
+  Enter or Ctrl + Enter
+  ```
+- Insert line above
+  ```
+  Ctrl + Shift + Enter
+  ```
+- Jump to matching bracket
+  ```
+  Ctrl + Shift + \
+  ```
 - Comment out
   ```
   Ctrl + /
   ```
-
 - Indent
   ```
   Tab with cursor at the left end the line
@@ -81,8 +89,8 @@
   ```
   Alt Click
   ```
-
--
--
-
+## Start HTML
+```
+html:5 + Enter or html: (see the select html:5) + Tab
+```
 

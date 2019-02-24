@@ -9,6 +9,18 @@
   ```
   View / Editor Layout
   ```
+- Split screen Vertical
+  ```
+  Ctrl + \
+  ```
+- Close windows
+  ```
+  Ctrl + K W
+  ```
+- Close all windows
+  ```
+  Ctrl + K U
+  ```
 ## Basic Editing
 - Copy line
   ```
@@ -17,10 +29,6 @@
 - Cut line
   ```
   Ctrl + X
-  ```
-- Move line up / down
-  ```
-  Alt + ↑ / ↓
   ```
 - Delete 1 line
   ```

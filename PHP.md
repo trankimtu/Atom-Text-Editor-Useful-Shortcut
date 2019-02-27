@@ -194,33 +194,15 @@
 <details>
   <summary>Operator</summary>
   
-Operator    | Function
-------------- | -------------
-"+"           | Add
-"-"           | Subtract
-"*"           | Multiple
-/             | Divide
-%             | Mod
-.             | Concate string
-+=            | 
--=            | 
-*=             |
-/=            | 
-%=            | 
-+=            | 
-.=             | 
- 
-  
-  ```
-  +
-  -
-  *
-  /
-  ** // Power
-  %
-  
-  ```
-  
+Operator      |               | Function        |Comparison    | 
+------------- | ------------- | -------------   | -------------|
+"+"           | +=            | Add             | != , <> , !==
+"-"           | -=            | Subtract        | == , ===
+"*"           | *=            | Multiple        | > , >= , >==
+**            | **=           | Power           | < , <= , <==
+/             | /=            | Divide          | max "=": check type
+%             | %=            | Mod             
+.             | .=            | Concatenate string  |
   
 </details>
 
@@ -228,7 +210,7 @@ Operator    | Function
 
 <!-- 
 ================================================================
-=========================== Constant ===========================
+======================= Handling String ========================
 ================================================================
 -->
 
@@ -314,30 +296,3 @@ Operator    | Function
 
 
 
-## Variable
-```
-$x = 5;
-```
-- Start with $
-- Name:
-  - Must start with a leter or underscore
-  - Cannot start with number
-  - Only contain A-z, 0-9, and _
-  - Case sensitive
-- Scope:
-  - Local
-    - Declair inside a function
-    - Work only in the function
-    ```
-    function test() {
-      $x = 15;
-      echo "x = $x";
-    }
-    ```
-  
-  - Global
-  
-  - Supper Global
-  
-  ## Constant
-  

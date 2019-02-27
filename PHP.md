@@ -296,23 +296,44 @@ Operator      |               | Function        |Comparison    |
  <details>
   <summary>implode</summary>
   
-    implode ( $glueString , $arrayVariable )
+    implode ( $separateString , $arrayVariable )
   <li>Passing a simple array</li>
-  <li>Return a string with all element separate by $glueString.</li>
+  <li>Return a string with all element separate by $separateString.</li>
   
     $arrayV = array('lastname', 'email', 'phone');
     
     $comma_separated = implode(",", $arrayV);
     echo $comma_separated."<br>";               // lastname,email,phone
     
-  <li>No $glueString mean $glueString = ""</li>
+  <li>No $separateString mean $separateString = ""</li>
   
     $nonseparated = implode($arrayV);
     echo $nonseparated."<br>";                  // lastnameemailphone
  </details>
  
  <details>
-  <summary>a</summary>
+  <summary>explode</summary>
+  Split a string to many strings at $separateString
+  
+    $pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
+    $pieces = explode(" ", $pizza);
+    echo $pieces[0]."<br>"; // piece1
+    echo $pieces[1]."<br>"; // piece2
+    echo $pieces[2]."<br>"; // piece2
+    echo $pieces[3]."<br>"; // piece2
+    echo $pieces[4]."<br>"; // piece2
+
+    // Example 2
+    $data = "foo:*:1023:1000::/home/foo:/bin/sh";
+    list($user, $pass, $uid, $gid, $gecos, $home, $shell) = explode(":", $data);
+    
+    echo $user."<br>"; // foo
+    echo $pass."<br>"; // *
+    echo $uid."<br>";  // 1023  
+    echo $gid."<br>";  //1000
+    echo $gecos."<br>";//
+    echo $home."<br>"; // /home/foo
+    echo $shell."<br>";// /bin/sh
  </details>
  
  <details>

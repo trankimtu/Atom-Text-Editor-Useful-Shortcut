@@ -216,20 +216,21 @@ Operator      |               | Function        |Comparison    |
 
 <details>
   <summary>String Handling</summary>
-  <p> </p>
+  
   <details>
     <summary>strlen</summary>
     <li>strlen : return number of characters in the string</li>
   
-  ```
-  echo strlen("1 22 333");  // 8
-  ```
+    ```
+    echo strlen("1 22 333");  // 8
+    ```
+   <p></p>
   </details>
 
-  <details>
+<details>
     <summary>str_word_cound</summary>
     <li>str_word_count : return number of word of the string</li>
-  
+
   ```
   echo str_word_count("0 1a b2 3 444 name");  //3
   ```

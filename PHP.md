@@ -216,19 +216,21 @@ Operator      |               | Function        |Comparison    |
 
 <details>
  <summary>String Handling</summary>
- https://www.w3schools.com/php/php_ref_string.asp
+   https://www.w3schools.com/php/php_ref_string.asp
  <details>
   <summary>index access</summary>
    Return character at the index of the string
           
     echo "Hello"[1];  //  e
+    
  </details>
  
- <detail>
+ <details>
   <summary>strlen </summary>
   return number of characters in the string
     
     echo strlen("1 22 333");     // 8
+    
  </details>
   
  <details>

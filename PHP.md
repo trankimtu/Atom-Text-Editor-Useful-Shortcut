@@ -228,9 +228,21 @@ Operator      |               | Function        |Comparison    |
 -->
 
 <details>
+
   <summary>String Handling</summary>
   <details>
-    <summary>a</summary>
+    <summary>strlen </summary>
+    
+   this is the code  
+    
+  </details>
+  
+  <details>
+    <summary>str_word_count </summary>
+  </details>
+  
+  <details>
+    <summary>strrev </summary>
   </details>
   
   <details>
@@ -248,19 +260,18 @@ Operator      |               | Function        |Comparison    |
   <details>
     <summary>a</summary>
   </details>
-  
 </details>
 
 - - - -
 
 <!-- 
 ================================================================
-=========================== Constant ===========================
+=========================== Loop ===========================
 ================================================================
 -->
 
 <details>
-  <summary></summary>
+  <summary>Loop</summary>
 </details>
 
 
@@ -268,24 +279,33 @@ Operator      |               | Function        |Comparison    |
 
 <!-- 
 ================================================================
-=========================== Constant ===========================
+=========================== Array ===========================
 ================================================================
 -->
 
 <details>
-  <summary></summary>
+  <summary>Array</summary>
 </details>
 
 - - - -
 
 <!-- 
 ================================================================
-=========================== Constant ===========================
+=========================== sortArray() ===========================
 ================================================================
 -->
 
 <details>
-  <summary></summary>
+  <summary>Sort Function for array</summary>
+  
+ ```sort() ``` - sort arrays in ascending order
+ 
+ ```rsort()``` - sort arrays in descending order
+ 
+ ```asort()``` - sort associative arrays in ascending order, according to the value
+ 
+ ```ksort()``` - sort associative arrays in ascending order, according to the key
+ 
 </details>
 
 - - - -

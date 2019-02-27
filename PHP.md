@@ -215,38 +215,34 @@ Operator      |               | Function        |Comparison    |
 -->
 
 <details>
-  <summary>String Handling</summary>
-
-</details>
-
-- - - -
-
-<!-- 
-================================================================
-=========================== Constant ===========================
-================================================================
--->
-
-<details>
 
   <summary>String Handling</summary>
+  https://www.w3schools.com/php/php_ref_string.asp
   <details>
     <summary>strlen </summary>
+    return number of characters in the string
     
-   this is the code  
-    
+    echo strlen("1 22 333");     // 8
   </details>
   
   <details>
     <summary>str_word_count </summary>
+    return number of word of the string
+  
+      echo str_word_count("0 1a b2 3 444 name");  // 3 
+   "0", "3", and "444" are contain all number, so they're not be counted
   </details>
   
   <details>
     <summary>strrev </summary>
+    Return a string reverse of the original string
+     
+    echo strrev ("Hello");  // olleH 
   </details>
   
   <details>
-    <summary>a</summary>
+    <summary>strpos</summary>
+    
   </details>
   
   <details>

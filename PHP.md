@@ -296,24 +296,26 @@ Operator      |               | Function        |Comparison    |
  <details>
   <summary>implode</summary>
   
-    implode ( $separateString , $arrayVariable )
+    implode ( $separateString , $variableArray )
   <li>Passing a simple array</li>
   <li>Return a string with all element separate by $separateString.</li>
   
-    $arrayV = array('lastname', 'email', 'phone');
+    $variableArray = array('lastname', 'email', 'phone');
     
-    $comma_separated = implode(",", $arrayV);
+    $comma_separated = implode(",", $variableArray);
     echo $comma_separated."<br>";               // lastname,email,phone
     
   <li>No $separateString mean $separateString = ""</li>
   
-    $nonseparated = implode($arrayV);
-    echo $nonseparated."<br>";                  // lastnameemailphone
+    $non_separated = implode($variableArray);
+    echo $non_separated."<br>";                  // lastnameemailphone
  </details>
  
  <details>
   <summary>explode</summary>
-  Split a string to many strings at $separateString
+  
+    explode($separateString, $variableArray)
+  At $separateString Split original string to many strings 
   
     $pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
     $pieces = explode(" ", $pizza);

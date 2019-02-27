@@ -215,47 +215,121 @@ Operator      |               | Function        |Comparison    |
 -->
 
 <details>
-
-  <summary>String Handling</summary>
-  https://www.w3schools.com/php/php_ref_string.asp
-  <details>
-    <summary>strlen </summary>
-    return number of characters in the string
+ <summary>String Handling</summary>
+ https://www.w3schools.com/php/php_ref_string.asp
+ <details>
+  <summary>index access</summary>
+   Return character at the index of the string
+          
+    echo "Hello"[1];  //  e
+ </details>
+ 
+ <detail>
+  <summary>strlen </summary>
+  return number of characters in the string
     
     echo strlen("1 22 333");     // 8
-  </details>
+ </details>
   
-  <details>
-    <summary>str_word_count </summary>
-    return number of word of the string
+ <details>
+  <summary>str_word_count </summary>
+  return number of word of the string
   
-      echo str_word_count("0 1a b2 3 444 name");  // 3 
-   "0", "3", and "444" are contain all number, so they're not be counted
-  </details>
+    echo str_word_count("0 1a b2 3 444 name");  // 3 
+  "0", "3", and "444" are contain all number, so they're not be counted
+ </details>
   
-  <details>
-    <summary>strrev </summary>
-    Return a string reverse of the original string
+ <details>
+  <summary>strrev </summary>
+  Return a string reverse of the original string
      
     echo strrev ("Hello");  // olleH 
-  </details>
+ </details>
   
-  <details>
-    <summary>strpos</summary>
+ <details>
+  <summary>strpos</summary>
+  Return 1st index of substring inside a string
+        
+    echo strpos("Hello Fullerton", "lo");  // 3
+ </details>
+  
+ <details>
+  <summary>str_replace</summary>
+  Replace original substring by new substring in a string
     
-  </details>
+    echo str_replace("Anaheim", "Fullerton", "Welcome to Anaheim");   // Welcome to Fullerton
+ </details>
   
-  <details>
-    <summary>a</summary>
-  </details>
+ <details>
+  <summary>substr</summary>
+ 
+    echo substr("0123456789", 3)       // 3456789  Start from 3 to end
+    echo substr("0123456789", 1, 4)    // 1234     Start from 1 to 4
+ </details>
   
-  <details>
-    <summary>a</summary>
-  </details>
+ <details>
+  <summary>strcmp</summary>
+    ASCII compare, therefore it's base on case sensitive
+    Return int $value
+    <li>$value < 0 mean $var 1 < $var2</li>
+    <li>$value > 0 mean $var 1 > $var2</li>
+    <li>$value = 0 mean $var 1 = $var2</li>
+
+    var1 = zello
+    var2 = hello
+    strcmp($ var1, $ var2) = 1
+
+    var1 = hello
+    var2 = hello
+    strcmp($ var1, $ var2) = 0
+
+    var1 = Hello
+    var2 = hello
+    strcmp($ var1, $ var2) = -1
+    
+    $var1 is not equal to $var2 in a case sensitive string comparison
+    var1 > var2 
+ </details>
+ 
+ <details>
+  <summary>implode</summary>
   
-  <details>
-    <summary>a</summary>
-  </details>
+    implode ( $glueString , $arrayVariable )
+  <li>Passing a simple array</li>
+  <li>Return a string with all element separate by $glueString.</li>
+  
+    $arrayV = array('lastname', 'email', 'phone');
+    
+    $comma_separated = implode(",", $arrayV);
+    echo $comma_separated."<br>";               // lastname,email,phone
+    
+  <li>No $glueString mean $glueString = ""</li>
+  
+    $nonseparated = implode($arrayV);
+    echo $nonseparated."<br>";                  // lastnameemailphone
+ </details>
+ 
+ <details>
+  <summary>a</summary>
+ </details>
+ 
+ <details>
+  <summary>a</summary>
+ </details>
+ 
+ <details>
+  <summary>a</summary>
+ </details>
+ 
+ <details>
+  <summary>a</summary>
+ </details>
+ 
+ <details>
+  <summary>a</summary>
+ </details>
+ 
+ 
 </details>
 
 - - - -

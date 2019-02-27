@@ -210,12 +210,63 @@ Operator      |               | Function        |Comparison    |
 
 <!-- 
 ================================================================
-======================= Handling String ========================
+======================= String Handling ========================
 ================================================================
 -->
 
 <details>
-  <summary></summary>
+  <summary>String Handling</summary>
+  <p> </p>
+  <details>
+    <summary>strlen</summary>
+    <li>strlen : return number of characters in the string</li>
+  
+  ```
+  echo strlen("1 22 333");  // 8
+  ```
+  </details>
+
+  <details>
+    <summary>str_word_cound</summary>
+    <li>str_word_count : return number of word of the string</li>
+  
+  ```
+  echo str_word_count("0 1a b2 3 444 name");  //3
+  ```
+   <li>0", "3", and "444" are contain all number, so they're not be counted</li>
+  </details>
+  <details>
+    <summary>strrev</summary>
+
+  </details>
+  <details>
+    <summary>strpos</summary>
+
+  </details>
+  <details>
+    <summary>str_replace</summary>
+
+  </details>
+  <details>
+    <summary></summary>
+
+  </details>
+  <details>
+    <summary></summary>
+
+  </details>
+  <details>
+    <summary></summary>
+
+  </details>
+  <details>
+    <summary></summary>
+
+  </details>
+  <details>
+    <summary></summary>
+
+  </details>
 </details>
 
 - - - -

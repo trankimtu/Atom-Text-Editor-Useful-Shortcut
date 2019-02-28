@@ -298,7 +298,7 @@ Operator      |               | Function        |Comparison    |
   
     implode ( $separateString , $variableArray )
   <li>Passing a simple array</li>
-  <li>Return a string with all element separate by $separateString.</li>
+  <li>Return a string which form by using $separateString bond all elements in the array together.</li>
   
     $variableArray = array('lastname', 'email', 'phone');
     
@@ -412,6 +412,67 @@ Operator      |               | Function        |Comparison    |
 -->
 
 <details>
+  <summary>Object Oriented</summary>
+</details>
+
+    class user {
+        private $uname="userName", $upass="userPass";
+        private $id=0, $name="name", $email="email@email.com", $phone="(000) 000-0000", $dob="00000000";
+
+        public function getId()     {return $this->id;}
+        public function getName()   {return $this->name;}
+        public function getEmail()  {return $this->email;}
+        public function getPhone()  {return $this->phone;}
+        public function getDob()    {return $this->dob;}
+        
+        public function setId($idSet)       { $this->id     = $idSet;}
+        public function setName($nameSet)   { $this->name   = $nameSet;}
+        public function setEmail($emailSet) { $this->email  = $emailSet;}
+        public function setPhone($phoneSet) { $this->phone  = $phoneSet;}
+        public function setDob($dobSet)     { $this->dob    = $dobSet;}
+
+
+    }
+
+    $newUser = new user;
+    var_dump($newUser);
+    echo "<br>";
+
+    echo $newUser->getId()      . "<br>";     //  0
+    echo $newUser->getName()    . "<br>";     //  name
+    echo $newUser->getEmail()   . "<br>";     //  email@email.com
+    echo $newUser->getPhone()   . "<br>";     //  (000) 000-0000
+    echo $newUser->getDob()     . "<br>";     //  00000000
+
+
+    $newUser->setId(1);
+    $newUser->setName("John");
+    $newUser->setEmail("john@gmail.com");
+    $newUser->setPhone(7141234567);
+    $newUser->setDob("01021992");
+
+    //Print out everything inside the class
+    var_dump($newUser);
+    echo "<br>";
+
+    echo $newUser->getId()      . "<br>";
+    echo $newUser->getName()    . "<br>";
+    echo $newUser->getEmail()   . "<br>";
+    echo $newUser->getPhone()   . "<br>";
+    echo $newUser->getDob()     . "<br>";
+
+
+    ?>
+
+- - - -
+
+<!-- 
+================================================================
+=========================== Constant ===========================
+================================================================
+-->
+
+<details>
   <summary></summary>
 </details>
 
@@ -428,6 +489,72 @@ Operator      |               | Function        |Comparison    |
 </details>
 
 - - - -
+
+
+<!-- 
+================================================================
+=========================== Constant ===========================
+================================================================
+-->
+
+<details>
+  <summary></summary>
+</details>
+
+- - - -
+
+
+<!-- 
+================================================================
+=========================== Constant ===========================
+================================================================
+-->
+
+<details>
+  <summary></summary>
+</details>
+
+- - - -
+
+
+<!-- 
+================================================================
+=========================== Constant ===========================
+================================================================
+-->
+
+<details>
+  <summary></summary>
+</details>
+
+- - - -
+
+
+<!-- 
+================================================================
+=========================== Constant ===========================
+================================================================
+-->
+
+<details>
+  <summary></summary>
+</details>
+
+- - - -
+
+
+<!-- 
+================================================================
+=========================== Constant ===========================
+================================================================
+-->
+
+<details>
+  <summary></summary>
+</details>
+
+- - - -
+
 
 
 

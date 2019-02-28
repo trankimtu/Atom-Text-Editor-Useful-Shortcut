@@ -413,7 +413,7 @@ Operator      |               | Function        |Comparison    |
 
 <details>
   <summary>Object Oriented</summary>
-</details>
+
 
     class user {
         private $uname="userName", $upass="userPass";
@@ -463,6 +463,7 @@ Operator      |               | Function        |Comparison    |
 
 
     ?>
+</details>
 
 - - - -
 

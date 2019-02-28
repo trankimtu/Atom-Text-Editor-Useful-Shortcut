@@ -380,6 +380,88 @@ Operator      |               | Function        |Comparison    |
 
 <details>
   <summary>Array</summary>
+  <details>
+  <summary>Simple</summary>
+  
+   ```count($arrayA):``` Array length
+   
+    $aboutMe = array("Mike J", 20, "USA", "CSUF CA U.S"); <br>
+    echo $aboutMe['0'];   // Mike J
+    echo $aboutMe[2]; // USA <br>
+  </details>
+
+<details>
+  <summary>Associative</summary>
+  
+    $arrayVariable = array("key1"=> "value1", "key2"=>num2, "key3"=>"value3");
+    
+    echo $arrayVariable['key1'];  //  value1
+    
+</details>
+<details>
+  <summary>Multidimension</summary>
+  Nested Array
+  
+  Nested Array 1 - Array with every element is an array
+  
+    <?php
+      $employees = array (
+        array (
+          "name" => "Mickey Mouse",
+          "title" => "Master of Ceremonies",
+          "salary" => 1000000.00
+        ),
+        array (
+          "name" => "Donald Duck",
+          "title" => "Court Jester",
+          "salary" => 1000.00
+        ),
+
+        array (
+          "name" => "Minnie Mouse",
+          "title" => "Executive Mouse",
+          "salary" => 2000000.00
+        )
+      );
+      echo $employees[0]["name"]."<br>";
+      echo $employees[1]["title"]."<br>";
+      echo $employees[2]["salary"]."<br>";
+      // echo ($employees[0])["name"].<"br">;
+      print_r($employees);
+
+      echo'<pre>';
+      print_r($employees[0]);
+      echo "</pre>";
+
+      echo '<pre>';
+      print_r($employees);
+      echo '</pre>';
+    ?>
+  Nested Array 2 - Array with the key has value is an array
+  
+    <?php
+      $user = array(
+        "info" => array(
+          "name"            => "Brett",
+          "age"             => 59,
+          "location"        => "Corona",
+          "educationLevel"  => "MSIS"
+        ),
+        "hobbies"           => array(
+          "racquetball",
+          "git-fiddle",
+          "watching NCAA Div 1 football"
+        )
+      );
+
+      echo "my name is " . $user["info"]["name"] . "<br>\n";
+      echo "I am " . $user["info"]["age"] . " years young<br>\n";
+      echo "I live in " . $user["info"]["location"] . "<br>\n";
+      echo "My highest education level is " . $user["info"]["educationLevel"] . "<br>\n";
+
+      echo "I enjoy " . $user["hobbies"][0] . ", " . $user["hobbies"][1] . "<br>\n";
+    ?>
+</details>
 </details>
 
 - - - -

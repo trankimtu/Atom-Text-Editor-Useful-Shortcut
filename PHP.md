@@ -474,7 +474,69 @@ Operator      |               | Function        |Comparison    |
 -->
 
 <details>
-  <summary></summary>
+  <summary>File</summary>
+   <details>
+    <summary>include</summary>
+    include(), require(), include_once(), require_once()<br>
+    <li>The require() function is identical to include(), except that it handles errors differently.<br></li>
+    <li>If an error occurs, the include() function generates a warning, but the script will continue execution.<br></li>
+    <li>The require() generates a fatal error, and the script will stop.<br></li>
+    <li>The require_once() statement is identical to require() except PHP will check if the file has already been included,<br>
+    and if so, not require it again. include_once is as well <br></li>
+    
+
+    include('abc.php');
+    
+  Can break the page to
+
+    header.php
+    index.php
+    footer.php
+
+
+  Inside header.php can include function.php
+
+
+    
+   </details>
+<!--      -->  
+   <details>
+    <summary>readfile</summary>
+    readfile() function reads a file and writes it to the output buffer.
+  
+   </details>
+
+   <details>
+    <summary>File Open/Read/Close</summary>
+    https://www.w3schools.com/php/php_file_open.asp
+    
+  
+   ```fopen()```: Open file<br>
+   ```readfile()```: Read file
+   ``` fclose()```: Close file
+   
+    <?php
+      $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+      echo fread($myfile,filesize("webdictionary.txt"));
+      fclose($myfile);
+    ?>
+   </details>
+
+   <details>
+    <summary>File Open/Write/Close</summary>
+    
+   Create file: ```$myfile = fopen("testfile.txt", "w"); ``` <br>
+   When open a file to write, everything will be erased then start from blank 
+   
+    $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+    $txt = "John Doe\n";
+    fwrite($myfile, $txt); // write value of $txt fo $myfile
+    $txt = "Jane Doe\n";
+    fwrite($myfile, $txt);  
+    fclose($myfile);
+
+   </details>
+
 </details>
 
 - - - -
